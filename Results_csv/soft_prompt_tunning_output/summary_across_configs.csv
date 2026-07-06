@@ -1,0 +1,5 @@
+config,n_slots,weighted_f1,macro_f1_all,macro_f1_restricted_n50,Hemiptera_f1,Coleoptera_f1
+baseline_zeroshot,0,0.014,0.107,0.131,0.0,0.005
+softprompt_N4,4,0.971,0.766,0.888,0.753,0.849
+softprompt_N8,8,0.97,0.766,0.89,0.757,0.839
+softprompt_N16,16,0.971,0.769,0.891,0.758,0.844

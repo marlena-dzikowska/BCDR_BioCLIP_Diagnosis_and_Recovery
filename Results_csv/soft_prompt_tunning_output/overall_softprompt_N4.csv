@@ -1,0 +1,18 @@
+,precision,recall,f1-score,support
+Araneae,0.989,0.979,0.984,564.0
+Blattodea,0.875,0.913,0.894,23.0
+Coleoptera,0.9,0.804,0.849,1143.0
+Diptera,0.978,0.991,0.985,31914.0
+Hemiptera,0.85,0.675,0.753,775.0
+Hymenoptera,0.946,0.928,0.937,3326.0
+Ixodida,0.0,0.0,0.0,1.0
+Lepidoptera,0.991,0.987,0.989,1744.0
+Mecoptera,0.722,0.382,0.5,34.0
+Neuroptera,0.778,0.548,0.643,115.0
+Orthoptera,1.0,1.0,1.0,8.0
+Plecoptera,0.98,0.926,0.952,54.0
+Raphidioptera,1.0,0.5,0.667,2.0
+Trichoptera,0.926,0.882,0.904,85.0
+accuracy,0.972,0.972,0.972,0.972
+macro avg,0.853,0.751,0.79,39788.0
+weighted avg,0.971,0.972,0.971,39788.0
