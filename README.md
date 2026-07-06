@@ -38,7 +38,7 @@ Vision-language foundation models such as BioCLIP promise automated taxonomic cl
 │   └── 10_cnn_baselines/             # EfficientNet-B3
 ├── scripts/                          # Standalone scripts
 │   └── extract_bioclip_embeddings.py # Feature extraction
-├── results/                          # Per-fold experimental outputs
+├── results_csv/                      # Csv files containg experimental outputs
 │   ├── bioclip_v1_predictions/       # Zero-shot outputs
 │   ├── bioclip_v2_predictions/       # Zero-shot outputs
 │   ├── cv_lora/                      # LoRA CV results
