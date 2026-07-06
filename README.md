@@ -22,7 +22,7 @@ Vision-language foundation models such as BioCLIP promise automated taxonomic cl
 - **CNN baselines complement adapted BioCLIP 2** on micro-classes excluded from LoRA training
 
 ## Repository structure
-'''
+```
 .
 ├── notebooks/                        # Jupyter notebooks for analysis
 │   ├── 01_dataset_preparation/       # Re-annotation, filtering
@@ -50,7 +50,7 @@ Vision-language foundation models such as BioCLIP promise automated taxonomic cl
 ├── figures/                          # Generated figures for thesis
 ├── configs/                          # Hyperparameter configurations
 └── docs/                             # Additional documentation
-'''
+```
 ## Setup
 
 ### Requirements
