@@ -23,26 +23,29 @@ Vision-language foundation models such as BioCLIP promise automated taxonomic cl
 
 ## Repository structure
 ```
-.
-├── notebooks/                        # Jupyter notebooks for analysis
-│   ├── 01_dataset_preparation/       # Re-annotation, filtering
-│   ├── 02_bioclip_diagnosis/         # BioCLIP v1/v2 zero-shot + k-NN
-│   ├── 03_image_quality_regression/  # Logistic regression models
-│   ├── 04_preprocessing_crops/     # Preprocessing implementation
-│   ├── 05_preprocessing/             # Preprocessing techniques evaluation
-│   ├── 06_soft_prompt_tuning/        # Soft-prompt training
-│   ├── 07_lora_fine_tuning/          # LoRA training on BioCLIP 2
-│   ├── 08_joint_lora_soft_prompt/    # Combined LoRA + soft-prompt
-│   ├── 09_dinov2_baseline/           # DINOv2 frozen + LoRA
-│   ├── 09_dinov2_baseline/           # ResNet-50 
-│   └── 10_cnn_baselines/             # EfficientNet-B3
-├── scripts/                          # Standalone scripts
-│   └── extract_bioclip_embeddings.py # Feature extraction
-├── results_csv/                      # Csv files containg experimental outputs
-│   ├── bioclip_v1_predictions/       # Zero-shot outputs
-│   ├── bioclip_v2_predictions/       # Zero-shot outputs
+
+├── notebooks/                            # Jupyter notebooks for analysis
+│   ├── 01_dataset_preparation/           # Re-annotation, filtering
+│   ├── 02_bioclip_diagnosis/             # BioCLIP v1/v2 zero-shot + k-NN
+│   ├── 03_image_quality_regression/      # Logistic regression models
+│   ├── 04_preprocessing_crops/           # Preprocessing implementation
+│   ├── 05_preprocessing/                 # Preprocessing techniques evaluation
+│   ├── 06_soft_prompt_tuning/            # Soft-prompt training
+│   ├── 07_lora_fine_tuning/              # LoRA training on BioCLIP 2
+│   ├── 08_joint_lora_soft_prompt/        # Combined LoRA + soft-prompt
+│   ├── 09_dinov2_baseline/               # DINOv2 frozen + LoRA
+│   ├── 09_dinov2_baseline/               # ResNet-50 
+│   └── 10_cnn_baselines/                 # EfficientNet-B3
+├── scripts/                              # Standalone scripts
+│   └── extract_bioclip_embeddings.py     # Feature extraction
+├── results_csv/                          # Csv files containg experimental outputs
+│   └── Predictions/                      # Zero-shot outputs
+│   │    ├──bioclip_v1_predictions.csv    # BioCLIP V1
+│   │    └── bioclip_v2_predictions.csv   # BioCLIP V2
+│   └── cv_soft_prompt/               # Soft-prompt CV results
+│   ├── lora_hpsweep_output/          # LoRA hp sweep output
 │   ├── cv_lora/                      # LoRA CV results
-│   ├── cv_soft_prompt/               # Soft-prompt CV results
+│   ├── 
 │   ├── cv_dinov2/                    # DINOv2 baseline CV results
 │   ├── resnet/                       # ResNet-50 results
 │   ├── efficientnet/                 # EfficientNet-B3s results
