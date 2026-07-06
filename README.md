@@ -24,18 +24,21 @@ Vision-language foundation models such as BioCLIP promise automated taxonomic cl
 ## Repository structure
 ```
 
-├── notebooks/                            # Jupyter notebooks for analysis
-│   ├── 01_dataset_preparation/           # Re-annotation, filtering
-│   ├── 02_bioclip_diagnosis/             # BioCLIP v1/v2 zero-shot + k-NN
-│   ├── 03_image_quality_regression/      # Logistic regression models
-│   ├── 04_preprocessing_crops/           # Preprocessing implementation
-│   ├── 05_preprocessing/                 # Preprocessing techniques evaluation
-│   ├── 06_soft_prompt_tuning/            # Soft-prompt training
-│   ├── 07_lora_fine_tuning/              # LoRA training on BioCLIP 2
-│   ├── 08_joint_lora_soft_prompt/        # Combined LoRA + soft-prompt
-│   ├── 09_dinov2_baseline/               # DINOv2 frozen + LoRA
-│   ├── 09_dinov2_baseline/               # ResNet-50 
-│   └── 10_cnn_baselines/                 # EfficientNet-B3
+├── notebooks/                                 # Jupyter notebooks for analysis
+│   ├── 01_dataset_preparation/                # Re-annotation, filtering
+│   ├── 02_bioclip_diagnosis/                  # BioCLIP v1/v2 zero-shot + k-NN
+│   ├── 03_image_quality_regression/           # Logistic regression models
+│   ├── 04_preprocessing_crops/                # Preprocessing implementation
+│   ├── 05_preprocessing/                      # Preprocessing techniques evaluation
+│   ├── 06_soft_prompt_tuning/                 # Soft-prompt training
+│   ├── 01_sweep.ipynb                         # LoRA hp sweep on BioCLIP 2
+│   ├── 02_cv_lora.ipynb                       # LoRA training on BioCLIP 2
+│   ├── 003_cv_joint.ipynb                     # Combined LoRA + soft-prompt
+│   ├── 04_dinov2_linear_probe.ipynb           # DINOv2 frozen
+│   ├── 09_cv_dinov2_lora.ipynb                # DINOv2 frozen + LoRA 
+│   ├── 09_cv_dinov2_lora-without_qkv.ipynb    # DINOv2 frozen + LoRA without qk
+│   ├── resnet_50_diopsis.ipynb                # ResNet-50
+│   └── efficiientnetb3.ipynb                  # EfficientNet-B3
 ├── scripts/                              # Standalone scripts
 │   └── extract_bioclip_embeddings.py     # Feature extraction
 ├── results_csv/                          # Csv files containg experimental outputs
