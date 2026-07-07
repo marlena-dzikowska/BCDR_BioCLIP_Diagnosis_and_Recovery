@@ -1,0 +1,3 @@
+model,weighted_f1_mean,weighted_f1_std,macro_f1_all_mean,macro_f1_all_std,macro_f1_n50_mean,macro_f1_n50_std,Hemiptera_f1_mean,Hemiptera_f1_std,Coleoptera_f1_mean,Coleoptera_f1_std
+BioCLIP v1,0.9504,0.0015,0.7314,0.0047,0.8201,0.0105,0.5953,0.0188,0.7117,0.0235
+BioCLIP 2,0.9715,0.0013,0.7978,0.0101,0.8864,0.0086,0.813,0.0234,0.8499,0.0109
