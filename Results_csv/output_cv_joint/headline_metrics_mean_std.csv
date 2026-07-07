@@ -1,0 +1,2 @@
+method,weighted_f1_mean,weighted_f1_std,macro_f1_all_mean,macro_f1_all_std,macro_f1_eligible_mean,macro_f1_eligible_std,Hemiptera_f1_mean,Hemiptera_f1_std,Coleoptera_f1_mean,Coleoptera_f1_std
+joint_lora_softprompt,0.9771,0.0022,0.5782,0.005,0.8995,0.0077,0.8833,0.0249,0.9061,0.0076

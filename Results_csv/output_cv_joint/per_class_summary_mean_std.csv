@@ -1,0 +1,15 @@
+class,support_total,f1_mean,f1_std,precision_mean,precision_std,recall_mean,recall_std,trained_in_joint
+Araneae,564,0.9817,0.0185,0.9982,0.0031,0.9663,0.0378,True
+Blattodea,23,0.0,0.0,0.0,0.0,0.0,0.0,False
+Coleoptera,1143,0.9061,0.0076,0.9155,0.0309,0.8976,0.016,True
+Diptera,31913,0.9892,0.001,0.9893,0.0013,0.989,0.0033,True
+Hemiptera,775,0.8833,0.0249,0.8628,0.0586,0.9071,0.0155,True
+Hymenoptera,3326,0.9393,0.0068,0.9283,0.0219,0.951,0.009,True
+Ixodida,0,0.0,0.0,0.0,0.0,0.0,0.0,False
+Lepidoptera,1744,0.9788,0.0163,0.9936,0.0043,0.965,0.0345,True
+Mecoptera,34,0.0,0.0,0.0,0.0,0.0,0.0,False
+Neuroptera,115,0.728,0.0591,0.7321,0.0381,0.7402,0.1604,True
+Orthoptera,8,0.0,0.0,0.0,0.0,0.0,0.0,False
+Plecoptera,54,0.8936,0.0756,0.8836,0.1191,0.9074,0.032,True
+Raphidioptera,0,0.0,0.0,0.0,0.0,0.0,0.0,False
+Trichoptera,85,0.7951,0.1651,0.7616,0.2791,0.9048,0.1091,True
