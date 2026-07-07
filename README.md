@@ -26,10 +26,12 @@ Vision-language foundation models such as BioCLIP promise automated taxonomic cl
 
 ├── notebooks/                                 # Jupyter notebooks for analysis
 │   ├── 01_dataset_preparation/                # Re-annotation, filtering
-│   ├── 02_bioclip_diagnosis/                  # BioCLIP v1/v2 zero-shot + k-NN
+│   ├── Visual_embeddings_(...).ipynb          # BioCLIP v1/v2 vis. embeddings k-NN
 │   ├── 03_image_quality_regression/           # Logistic regression models
 │   ├── 04_preprocessing_crops/                # Preprocessing implementation
 │   ├── 05_preprocessing/                      # Preprocessing techniques evaluation
+│   ├── 07_BioClip2_restricted.ipynb           # BioCLIP 2 restricted label space (14)
+│   ├── 07_BioClip_restricted.ipynb            # BioCLIP restricted label space (14)
 │   ├── 06_soft_prompt_tuning/                 # Soft-prompt training
 │   ├── 01_sweep.ipynb                         # LoRA hp sweep on BioCLIP 2
 │   ├── 02_cv_lora.ipynb                       # LoRA training on BioCLIP 2
@@ -45,8 +47,17 @@ Vision-language foundation models such as BioCLIP promise automated taxonomic cl
 │   └── Predictions/                      # Zero-shot outputs
 │   │    ├──bioclip_v1_predictions.csv    # BioCLIP V1
 │   │    └── bioclip_v2_predictions.csv   # BioCLIP V2
-│   └── cv_soft_prompt/               # Soft-prompt CV results
-│   ├── lora_hpsweep_output/          # LoRA hp sweep output
+│   └── detailed_sample_description/      # Count, metrices, recall for BioCLIP V1 and V2
+│   │    ├──counts_b(...).csv             # Confusion matrix counts BioCLIP V1 and V2
+│   │    ├──metrics_b(...).csv            # Classification performance results for BioCLIP V1 and V2
+│   │    ├──recall_pct_b(...).csv         # Normalized recall for BioCLIP V1 and V2 
+│   │    └── rescue_damage(...).csv       # Rescue/damage rate for pre-processed crops classification on BioCLIP V1
+│   └── diagnostic_logistic_regression/   # Logistic regression - failure prediction of class with BioCLIP V1
+│   │    ├──log1.csv                      # control
+│   │    ├──log2_1.csv                    # crops and setting diagnostic
+│   │    └── log3_1.csv                   # sensitivity analysis
+│   └── cv_soft_prompt/                   # Soft-prompt CV results
+│   ├── lora_hpsweep_output/              # LoRA hp sweep output
 │   ├── cv_lora/                      # LoRA CV results
 │   ├── 
 │   ├── cv_dinov2/                    # DINOv2 baseline CV results
