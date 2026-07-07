@@ -110,8 +110,6 @@ Full dependency list in `requirements.txt`.
 The DiopSIS image data used in this project is subject to the Appolo project data sharing policy and is **not publicly available**. Access can be requested through the WSL.
 
 For reproducibility, this repository includes:
-- **Per-crop metadata**: re-annotated labels, image quality metrics, and BioCLIP predictions for all 39,788 readable crops
-- **Frozen embeddings**: BioCLIP v1 and v2 visual embeddings (compressed .npz files)
 - **Per-fold outputs**: classification reports and confusion matrices for all experiments
 
 These artifacts enable full re-analysis without access to the raw image data.
