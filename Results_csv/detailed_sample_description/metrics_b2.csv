@@ -1,0 +1,17 @@
+BioClip2,precision,recall,f1-score,support
+Araneae,0.931,0.98,0.955,564
+Blattodea,0.122,0.826,0.212,23
+Coleoptera,0.325,0.566,0.413,1143
+Diptera,0.987,0.842,0.909,31914
+Hemiptera,0.123,0.619,0.205,775
+Hymenoptera,0.898,0.795,0.843,3326
+Ixodida,0,0,0,1
+Lepidoptera,0.867,0.985,0.922,1744
+Mecoptera,1,0.059,0.111,34
+Neuroptera,0.293,0.104,0.154,115
+Orthoptera,0.05,1,0.095,8
+Plecoptera,0.86,0.907,0.883,54
+Raphidioptera,1,1,1,2
+Trichoptera,0.802,0.812,0.807,85
+macro avg,0.59,0.678,0.536,39788
+weighted avg,0.934,0.832,0.873,39788

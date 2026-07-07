@@ -1,0 +1,16 @@
+BioCLIP1,,,,,,,,,,,,,,,
+TRUE,Araneae,Blattodea,Coleoptera,Diptera,Hemiptera,Hymenoptera,Ixodida,Lepidoptera,Mecoptera,Neuroptera,Orthoptera,Plecoptera,Raphidioptera,Trichoptera,<other>
+Araneae,532,0,8,1,9,8,2,0,0,0,0,0,0,0,4
+Blattodea,0,8,5,0,2,0,0,2,0,1,2,0,0,2,1
+Coleoptera,1,0,700,170,124,37,9,3,0,1,4,0,0,0,94
+Diptera,389,0,4016,23717,2074,371,58,102,12,55,50,4,7,75,984
+Hemiptera,14,0,98,315,236,12,1,11,0,0,5,0,0,1,82
+Hymenoptera,56,13,697,129,360,1748,0,43,5,3,7,14,1,24,226
+Ixodida,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lepidoptera,2,0,10,11,33,3,0,1646,0,3,0,0,0,23,13
+Mecoptera,0,0,1,13,8,1,0,0,3,2,2,0,0,3,1
+Neuroptera,0,1,8,53,22,0,0,5,0,8,1,0,0,2,15
+Orthoptera,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0
+Plecoptera,0,0,0,1,5,0,0,0,0,0,0,42,2,1,3
+Raphidioptera,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0
+Trichoptera,0,0,2,0,0,0,0,0,0,0,0,0,0,83,0
