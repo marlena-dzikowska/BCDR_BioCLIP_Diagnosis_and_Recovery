@@ -25,11 +25,9 @@ Vision-language foundation models such as BioCLIP promise automated taxonomic cl
 ```
 
 ├── notebooks/                                 # Jupyter notebooks for analysis
-│   ├── 01_dataset_preparation/                # Re-annotation, filtering
+│   ├── sample_overview.ipynb                  # Detailed overview of BioCLIP V1 and V2 prediction without and  with pre-pocessing
 │   ├── Visual_embeddings_(...).ipynb          # BioCLIP v1/v2 vis. embeddings k-NN
 │   ├── 03_image_quality_regression/           # Logistic regression models
-│   ├── 04_preprocessing_crops/                # Preprocessing implementation
-│   ├── 05_preprocessing/                      # Preprocessing techniques evaluation
 │   ├── 07_BioClip2_restricted.ipynb           # BioCLIP 2 restricted label space (14)
 │   ├── 07_BioClip_restricted.ipynb            # BioCLIP restricted label space (14)
 │   ├── 06_soft_prompt_tuning/                 # Soft-prompt training
@@ -41,30 +39,33 @@ Vision-language foundation models such as BioCLIP promise automated taxonomic cl
 │   ├── 09_cv_dinov2_lora-without_qkv.ipynb    # DINOv2 frozen + LoRA without qk
 │   ├── resnet_50_diopsis.ipynb                # ResNet-50
 │   └── efficiientnetb3.ipynb                  # EfficientNet-B3
-├── scripts/                              # Standalone scripts
-│   └── extract_bioclip_embeddings.py     # Feature extraction
+│
 ├── results_csv/                          # Csv files containg experimental outputs
 │   └── Predictions/                      # Zero-shot outputs
 │   │    ├──bioclip_v1_predictions.csv    # BioCLIP V1
 │   │    └── bioclip_v2_predictions.csv   # BioCLIP V2
 │   └── detailed_sample_description/      # Count, metrices, recall for BioCLIP V1 and V2
-│   │    ├──counts_b(...).csv             # Confusion matrix counts BioCLIP V1 and V2
-│   │    ├──metrics_b(...).csv            # Classification performance results for BioCLIP V1 and V2
-│   │    ├──recall_pct_b(...).csv         # Normalized recall for BioCLIP V1 and V2 
+│   │    ├── counts_b(...).csv            # Confusion matrix counts BioCLIP V1 and V2
+│   │    ├── metrics_b(...).csv           # Classification performance results for BioCLIP V1 and V2
+│   │    ├── recall_pct_b(...).csv        # Normalized recall for BioCLIP V1 and V2 
 │   │    └── rescue_damage(...).csv       # Rescue/damage rate for pre-processed crops classification on BioCLIP V1
 │   └── diagnostic_logistic_regression/   # Logistic regression - failure prediction of class with BioCLIP V1
-│   │    ├──log1.csv                      # control
-│   │    ├──log2_1.csv                    # crops and setting diagnostic
+│   │    ├── log1.csv                     # control
+│   │    ├── log2_1.csv                   # crops and settings diagnostic
 │   │    └── log3_1.csv                   # sensitivity analysis
-│   └── cv_soft_prompt/                   # Soft-prompt CV results
-│   ├── lora_hpsweep_output/              # LoRA hp sweep output
-│   ├── cv_lora/                      # LoRA CV results
-│   ├── 
-│   ├── cv_dinov2/                    # DINOv2 baseline CV results
-│   ├── resnet/                       # ResNet-50 results
-│   ├── efficientnet/                 # EfficientNet-B3s results
-│   └── logistic_regression/          # Image quality analysis
-├── figures/                          # Generated figures for thesis
+│   └── output_knn/                       # BioCLIP V1 and V2 visual embeddings knn analysis results
+│   ├── output_bioClip2_restricted.../    # BioCLIP V2 restricted label space (37) results
+│   ├── cv_soft_prompt/                   # BioCLIP V2 soft-prompt CV results including restricted label space (14) baseline
+│   ├── lora_hpsweep_output/              # BioCLIP V2 LoRA hp sweep output
+│   ├── lora_cv_final/                    # BioCLIP V2 LoRA CV results
+│   ├── output_cv_joint/                  # BioCLIP V2 LoRA CV & soft-prompt CV results
+│   ├── output_dinov2/                    # DINOv2 baseline CV results
+│   ├── output_dinov2_lora_without.../    # DINOv2 LoRA tuning without qkv
+│   ├── output_dinov2_lora/               # DINOv2 LoRA tuning
+│   ├── output_resnet50/                  # ResNet-50 results
+│   └── output_efficientnetb3/            # EfficientNet-B3s results
+│   
+├── figures/                              # Generated figures for thesis
 ├── configs/                          # Hyperparameter configurations
 └── docs/                             # Additional documentation
 ```
@@ -150,19 +151,6 @@ jupyter notebook notebooks/09_cnn_baselines/cv_efficientnet_b3.ipynb
 ### Cross-validation protocol
 
 All CV experiments use 3-fold stratified splits with `random_state=0`. Classes with n<3 are retained in the training set across all folds and receive F1=0 in evaluation by construction. Classes with n<50 are excluded from LoRA and soft-prompt training but retained in validation for evaluation.
-
-## Compute requirements
-
-| Experiment | GPU | Time |
-|---|---|---|
-| BioCLIP zero-shot inference | Any | ~30 min |
-| k-NN diagnostic | CPU | ~15 min |
-| Logistic regression | CPU | <5 min |
-| Soft-prompt CV (3 folds) | A100 | ~45 min |
-| LoRA CV (3 folds) | A100 | ~1h 15 min |
-| Joint LoRA + soft-prompt CV | A100 | ~1h 30 min |
-| DINOv2 LoRA CV | A100 | ~1h 30 min |
-| CNN baseline CV | A100 | ~2h per model |
 
 ## Citation
 
