@@ -1,0 +1,2 @@
+method,weighted_f1_mean,weighted_f1_std,macro_f1_all_mean,macro_f1_all_std,macro_f1_eligible_mean,macro_f1_eligible_std,Hemiptera_f1_mean,Hemiptera_f1_std,Coleoptera_f1_mean,Coleoptera_f1_std
+efficientnetb3_finetuned,0.9727,0.0005,0.7318,0.0076,0.8845,0.0019,0.8564,0.018,0.8558,0.0121

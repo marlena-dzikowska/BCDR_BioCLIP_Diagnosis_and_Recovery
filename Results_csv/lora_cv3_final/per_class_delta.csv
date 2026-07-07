@@ -1,0 +1,15 @@
+class,support,frozen_f1,lora_f1,delta,trained_in_lora
+Araneae,564,0.9856,0.992,0.0064,True
+Blattodea,23,0.9045,0.7302,-0.1743,False
+Coleoptera,1143,0.823,0.8996,0.0766,True
+Diptera,31913,0.9827,0.9901,0.0074,True
+Hemiptera,775,0.7356,0.8885,0.1529,True
+Hymenoptera,3326,0.9252,0.9486,0.0234,True
+Ixodida,0,0.0,0.0,0.0,False
+Lepidoptera,1744,0.9844,0.9888,0.0044,True
+Mecoptera,34,0.2366,0.0556,-0.181,False
+Neuroptera,115,0.541,0.671,0.13,True
+Orthoptera,8,1.0,1.0,0.0,False
+Plecoptera,54,0.9141,0.8766,-0.0375,True
+Raphidioptera,0,0.0,0.0,0.0,False
+Trichoptera,85,0.8716,0.9017,0.0301,True
