@@ -1,0 +1,2 @@
+method,weighted_f1,macro_f1_all,macro_f1_restricted_n50,Hemiptera_f1,Coleoptera_f1,inference_time_sec
+method_a_restricted,0.8196,0.36,0.467,0.1096,0.2382,24921
