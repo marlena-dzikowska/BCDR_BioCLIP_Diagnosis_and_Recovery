@@ -27,9 +27,9 @@ Vision-language foundation models such as BioCLIP promise automated taxonomic cl
 ├── notebooks/                                 # Jupyter notebooks for analysis
 │   ├── sample_overview.ipynb                  # Detailed overview of BioCLIP V1 and V2 prediction without and  with pre-pocessing
 │   ├── Visual_embeddings_(...).ipynb          # BioCLIP v1/v2 vis. embeddings k-NN
-│   ├── 03_image_quality_regression/           # Logistic regression models
-│   ├── 07_BioClip2_restricted.ipynb           # BioCLIP 2 restricted label space (14)
-│   ├── 07_BioClip_restricted.ipynb            # BioCLIP restricted label space (14)
+│   ├── Logistic_failure_analysis...           # Logistic regression models on failure prediction with BioCLIP V1
+│   ├── 07_BioClip2_restricted.ipynb           # BioCLIP 2 restricted label space (37)
+│   ├── 07_BioClip_restricted.ipynb            # BioCLIP restricted label space (37)
 │   ├── 06_soft_prompt_tuning/                 # Soft-prompt training
 │   ├── 01_sweep.ipynb                         # LoRA hp sweep on BioCLIP 2
 │   ├── 02_cv_lora.ipynb                       # LoRA training on BioCLIP 2
